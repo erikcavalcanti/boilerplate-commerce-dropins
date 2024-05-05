@@ -120,6 +120,7 @@ function renderProduct(product, config, block) {
 
   const addToCartButton = fragment.querySelector('.add-to-cart');
   if (addToCartButton) {
+    addToCartButton.classList.add('button');
     addToCartButton.addEventListener('click', async () => {
       const values = [{
         optionsUIDs: [],
@@ -129,7 +130,7 @@ function renderProduct(product, config, block) {
       const { addProductsToCart } = await import('@dropins/storefront-cart/api.js');
       // TODO: productId not exposed by catalog service as number
       window.adobeDataLayer.push({ productContext: { productId: 0, ...product } });
-      console.debug('onAddToCart', values);
+      console.log('onAddToCart', values);
       addProductsToCart(values);
     });
   }
@@ -139,8 +140,8 @@ function renderProduct(product, config, block) {
 
 export default async function decorate(block) {
   const config = readBlockConfig(block);
-  config['details-button'] = !!(config['details-button'] || config['details-button'] === 'true');
-  config['cart-button'] = !!(config['cart-button'] || config['cart-button'] === 'true');
+  config['details-button'] = config['details-button'] === 'true';
+  config['cart-button'] = config['cart-button'] === 'true';
 
   renderPlaceholder(config, block);
 
