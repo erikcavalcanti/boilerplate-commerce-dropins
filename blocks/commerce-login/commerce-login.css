@@ -2,3 +2,8 @@
     max-width: 700px;
     margin: auto;
 }
+
+.auth-password-field__eye-icon,
+.dropin-input__field-icon--left, .dropin-input__field-icon--right {
+    z-index: 1;
+}

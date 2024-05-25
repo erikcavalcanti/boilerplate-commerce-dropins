@@ -407,6 +407,10 @@ header .nav-search-panel input {
   min-height: 360px;
 }
 
+a.dropin-button.dropin-button--medium.dropin-button--primary {
+  color: white !important;
+}
+
 /* If viewport height is below max, set max height to 90% of viewport */
 @media (height < 820px) {
   .cart-mini-cart:not(:has(.cart-empty-cart)) {
