@@ -1,5 +1,4 @@
 footer {
-  padding: 24rem;
   padding-bottom: 0rem;
   background-color: white;
   font: var(--type-body-2-default-font);
@@ -14,14 +13,6 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
-
-/* .section.img-full.column-container {
-  padding: 0 !important;
-}
-
-.section.img-full.column-container > .column-wrapper {
-  max-width: none;
-} */
 
 .section.img-full.column-container picture img {
   width: 100%;
