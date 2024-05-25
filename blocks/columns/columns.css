@@ -95,9 +95,9 @@
 }
 
 .section.insights-magazine p,
-.section.red-button.columns-container.insights-magazine p
 .section.red-button.columns-container.insights-magazine h3,
-.section.red-button.columns-container.insights-magazine h4 {
+.section.red-button.columns-container p,
+.section.red-button.columns-container h4 {
   font-family: 'Montserrat' !important;
 }
 
