@@ -31,3 +31,34 @@
     order: unset;
   }
 }
+
+.columns-container.red-button picture img {
+  width: auto;
+}
+
+.columns-container.red-button a.button {
+  background-color: #ec1c24;
+  font-style: italic !important;
+}
+
+.section.img-full.column-container {
+  padding: 0 !important;
+}
+
+.section.img-full.column-container > .column-wrapper {
+  max-width: none;
+}
+
+.section.img-full.column-container picture img {
+  width: 100%;
+}
+
+.section.img-full.bg-darkblue {
+  background-color: #102140;
+  color: white;
+  padding: 15rem 0;
+}
+
+.section.img-full.bg-darkblue h4 {
+  font-family: 'Montserrat' !important;
+}

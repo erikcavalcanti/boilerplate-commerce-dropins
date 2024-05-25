@@ -1,0 +1,63 @@
+.section.img-full-up .banner-img.block div:nth-child(1),
+.section.img-full-down .banner-img.block div:nth-child(1) {
+    text-align: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.section.img-full-down.starbucks .banner-img.block div:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://webjump.ai/wp-content/uploads/2023/03/background-starbucks-2.jpg);
+}
+
+.section.img-full-up.broto .banner-img.block div:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://webjump.ai/wp-content/uploads/2023/04/background-brasilseg-2.jpg);
+    background-position: center;
+}
+
+.section.img-full-down.elgin .banner-img.block div:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(https://webjump.ai/wp-content/uploads/2023/05/background-elgin-2.jpg);
+}
+
+.section.img-full-down .banner-img.block div:nth-child(1) div {
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    /* max-width: var(--awb-max-width); */
+    line-height: 1;
+    /* filter: var(--awb-filter);
+    transition: var(--awb-filter-transition); */
+}
+
+.section.img-full-up .banner-img.block div:nth-child(1) p,
+.section.img-full-up .banner-img.block div:nth-child(1) h2,
+.section.img-full-down .banner-img.block div:nth-child(1) p,
+.section.img-full-down .banner-img.block div:nth-child(1) h2 {
+    font-family: 'Montserrat' !important;
+    margin: 3px;
+}
+
+.section.img-full-up.banner-img-container > div > div > div:nth-child(1) > div,
+.section.img-full-down.banner-img-container > div > div > div:nth-child(1) > div {
+    padding-top: 15rem;
+}
+
+.section.img-full-up.banner-img-container > div > div > div:nth-child(4) > div,
+.section.img-full-down.banner-img-container > div > div > div:nth-child(4) > div {
+    padding-bottom: 15rem;
+}
+
+.section.img-full-up.banner-img-container,
+.section.img-full-down.banner-img-container {
+    padding: 0;
+}
+
+.section.img-full-up.banner-img-container .banner-img-wrapper,
+.section.img-full-down.banner-img-container .banner-img-wrapper {
+    max-width: none;
+}

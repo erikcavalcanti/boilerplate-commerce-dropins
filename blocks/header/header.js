@@ -15,6 +15,22 @@ import { loadFragment } from '../fragment/fragment.js';
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
+window.onscroll = function () {
+  console.log('window.scrollY', window.scrollY)
+  const navWrapper = document.getElementById('cmp-nav-wrapper');
+  const logo = navWrapper.querySelector('img');
+  const root = document.querySelector(':root');
+  if (window.scrollY >= 100 ) {
+    root.style.setProperty('--nav-height', '6rem');
+    navWrapper.style.backgroundColor = 'white';
+    logo.style.width = '164px';
+  } else {
+    root.style.setProperty('--nav-height', '11rem');
+    navWrapper.style.backgroundColor = 'transparent';
+    logo.style.width = '193px';
+  }
+}
+
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
@@ -278,6 +294,7 @@ export default async function decorate(block) {
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
   const navWrapper = document.createElement('div');
+  navWrapper.id = 'cmp-nav-wrapper';
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);

@@ -6,40 +6,40 @@ settings:
 
 dependencies:
   '@adobe/magento-storefront-event-collector':
-    specifier: ^1.7.1
+    specifier: ^1.8.0
     version: 1.8.0
   '@adobe/magento-storefront-events-sdk':
-    specifier: ^1.7.1
+    specifier: ^1.8.0
     version: 1.8.0
+  '@dropins/storefront-auth':
+    specifier: 0.0.1-alpha2
+    version: 0.0.1-alpha2
   '@dropins/storefront-cart':
     specifier: 0.1.1
     version: 0.1.1
   '@dropins/storefront-checkout':
-    specifier: 0.1.0-alpha30
-    version: 0.1.0-alpha30
+    specifier: 0.1.0-alpha31
+    version: 0.1.0-alpha31
   '@dropins/storefront-order-confirmation':
-    specifier: 0.1.0-alpha19
-    version: 0.1.0-alpha19
+    specifier: 0.1.0-alpha20
+    version: 0.1.0-alpha20
   '@dropins/storefront-pdp':
     specifier: 0.2.2-alpha24
     version: 0.2.2-alpha24
   '@dropins/tools':
-    specifier: 0.21.2
-    version: 0.21.2
+    specifier: 0.22.0
+    version: 0.22.0
 
 devDependencies:
   '@adobe/aem-cli':
     specifier: ^16.1.3
     version: 16.3.9
   '@babel/core':
-    specifier: 7.24.0
-    version: 7.24.0
+    specifier: 7.24.4
+    version: 7.24.4
   '@babel/eslint-parser':
-    specifier: 7.23.10
-    version: 7.23.10(@babel/core@7.24.0)(eslint@8.57.0)
-  '@esm-bundle/chai':
-    specifier: 4.3.4-fix.0
-    version: 4.3.4-fix.0
+    specifier: 7.24.1
+    version: 7.24.1(@babel/core@7.24.4)(eslint@8.57.0)
   chai:
     specifier: 5.1.0
     version: 5.1.0
@@ -53,11 +53,11 @@ devDependencies:
     specifier: 2.29.1
     version: 2.29.1(eslint@8.57.0)
   stylelint:
-    specifier: 16.2.1
-    version: 16.2.1
+    specifier: 16.3.1
+    version: 16.3.1
   stylelint-config-standard:
     specifier: 36.0.0
-    version: 36.0.0(stylelint@16.2.1)
+    version: 36.0.0(stylelint@16.3.1)
 
 packages:
 
@@ -276,15 +276,15 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/core@7.24.0:
-    resolution: {integrity: sha512-fQfkg0Gjkza3nf0c7/w6Xf34BW4YvzNfACRLmmb7XRLa6XHdR+K9AlJlxneFfWYf6uhOzuzZVTjF/8KfndZANw==}
+  /@babel/core@7.24.4:
+    resolution: {integrity: sha512-MBVlMXP+kkl5394RBLSxxk/iLTeVGuXTV3cIDXavPpMMqnSnt6apKgan/U8O3USWZCWZT/TbgfEpKa4uMgN4Dg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.24.2
       '@babel/generator': 7.24.4
       '@babel/helper-compilation-targets': 7.23.6
-      '@babel/helper-module-transforms': 7.23.3(@babel/core@7.24.0)
+      '@babel/helper-module-transforms': 7.23.3(@babel/core@7.24.4)
       '@babel/helpers': 7.24.4
       '@babel/parser': 7.24.4
       '@babel/template': 7.24.0
@@ -299,14 +299,14 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/eslint-parser@7.23.10(@babel/core@7.24.0)(eslint@8.57.0):
-    resolution: {integrity: sha512-3wSYDPZVnhseRnxRJH6ZVTNknBz76AEnyC+AYYhasjP3Yy23qz0ERR7Fcd2SHmYuSFJ2kY9gaaDd3vyqU09eSw==}
+  /@babel/eslint-parser@7.24.1(@babel/core@7.24.4)(eslint@8.57.0):
+    resolution: {integrity: sha512-d5guuzMlPeDfZIbpQ8+g1NaCNuAGBBGNECh0HVqz1sjOeVLh2CEaifuOysCH18URW6R7pqXINvf5PaR/dC6jLQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
       eslint: ^7.5.0 || ^8.0.0
     dependencies:
-      '@babel/core': 7.24.0
+      '@babel/core': 7.24.4
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
       eslint: 8.57.0
       eslint-visitor-keys: 2.1.0
@@ -361,13 +361,13 @@ packages:
       '@babel/types': 7.24.0
     dev: true
 
-  /@babel/helper-module-transforms@7.23.3(@babel/core@7.24.0):
+  /@babel/helper-module-transforms@7.23.3(@babel/core@7.24.4):
     resolution: {integrity: sha512-7bBs4ED9OmswdfDzpz4MpWgSrV7FXlc3zIagvLFjS5H+Mk7Snr21vQ6QwrsoCGMfNC4e4LQPdoULEt4ykz0SRQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/core': 7.24.0
+      '@babel/core': 7.24.4
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-module-imports': 7.24.3
       '@babel/helper-simple-access': 7.22.5
@@ -503,20 +503,26 @@ packages:
       postcss-selector-parser: 6.0.16
     dev: true
 
+  /@dropins/storefront-auth@0.0.1-alpha2:
+    resolution: {integrity: sha512-2h1RaIPXvJ02Kx4a//E7mpXlS154HVnkTuXUzwtaLbGKkr/aF76XeupQh4xvOU4A4/6cLaboVOnOE4kSjqLyeg==}
+    dependencies:
+      '@dropins/tools': 0.21.2
+    dev: false
+
   /@dropins/storefront-cart@0.1.1:
     resolution: {integrity: sha512-BZ7QatO4cxeJPwRo1MVsxO9cpJzPc0gFhCId5zIby6Hjg486CzBWeKkLH+S4bjGAIovry2Y/ccBWL2ea9rGKHQ==}
     dev: false
 
-  /@dropins/storefront-checkout@0.1.0-alpha30:
-    resolution: {integrity: sha512-gRzLdMuQ6yU0uZ0BgVqga78uAGf98At5piousbDfj2r2dsvmOBcJzh967LuSebKq7cyVufYiLtEe4QOJFULkdg==}
+  /@dropins/storefront-checkout@0.1.0-alpha31:
+    resolution: {integrity: sha512-aGAftzJcf3xTPblpDnqKLhfMlmJOhvmaRkmY+vJlIBTb0F07sEUyN8Sy6kr2DQNMeRaCJLNsWrPMR26x90EkUQ==}
     dependencies:
-      '@dropins/tools': 0.21.2
+      '@dropins/tools': 0.22.0
     dev: false
 
-  /@dropins/storefront-order-confirmation@0.1.0-alpha19:
-    resolution: {integrity: sha512-zk7pCqhXntyhyERljzSLVzziZOs+vvB8NLbAXIiciZ6MCbqy27T6xOf7RC7r0BqYXwQEOI5B3eEdOHYN2iEFSA==}
+  /@dropins/storefront-order-confirmation@0.1.0-alpha20:
+    resolution: {integrity: sha512-ZoMO1hLE4H2ermhL+a61X1tUDBSx4srxEJVaFJCh46lbB8HpefoPlMjHaayDwfkId3vohZ4a1l/E7b062lJQMA==}
     dependencies:
-      '@dropins/tools': 0.21.2
+      '@dropins/tools': 0.22.0
     dev: false
 
   /@dropins/storefront-pdp@0.2.2-alpha24:
@@ -526,6 +532,14 @@ packages:
   /@dropins/tools@0.21.2:
     resolution: {integrity: sha512-WATN5t8/Ws+eF33o/vTZq6sQ9I3087gvnb//2/3tbRxaDQijvVqG3C985uuwX/WOt9lED8fzdbQserabDTvodQ==}
     dev: false
+
+  /@dropins/tools@0.22.0:
+    resolution: {integrity: sha512-/T+DUgfx5/bfcZ8AqaBqKiVlPNz1QY5774WOFzpR5ccqGEl1GWuAjhuwI914XNn3Z+7xPUA9+SL0F4JRr12nvw==}
+    dev: false
+
+  /@dual-bundle/import-meta-resolve@4.1.0:
+    resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
+    dev: true
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -562,12 +576,6 @@ packages:
   /@eslint/js@8.57.0:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
-  /@esm-bundle/chai@4.3.4-fix.0:
-    resolution: {integrity: sha512-26SKdM4uvDWlY8/OOOxSB1AqQWeBosCX3wRYUZO7enTAj03CtVxIiCimYVG2WpULcyV51qapK4qTovwkUr5Mlw==}
-    dependencies:
-      '@types/chai': 4.3.14
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
@@ -718,10 +726,6 @@ packages:
 
   /@tootallnate/quickjs-emscripten@0.23.0:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
-    dev: true
-
-  /@types/chai@4.3.14:
-    resolution: {integrity: sha512-Wj71sXE4Q4AkGdG9Tvq1u/fquNz9EdG4LIJMwVVII7ashjD/8cf8fyIfJAjRr6YcsXnSE8cOGQPq1gqeR8z+3w==}
     dev: true
 
   /@types/hast@3.0.4:
@@ -2903,8 +2907,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /known-css-properties@0.29.0:
-    resolution: {integrity: sha512-Ne7wqW7/9Cz54PDt4I3tcV+hAyat8ypyOGzYRJQfdxnnjeWsTxt1cy8pjvvKeI5kfXuyvULyeeAvwvvtAX3ayQ==}
+  /known-css-properties@0.30.0:
+    resolution: {integrity: sha512-VSWXYUnsPu9+WYKkfmJyLKtIvaRJi1kXUqVmBACORXZQxT5oZDsoZ2vQP+bQFDnWtpI/4eq3MLoRMjI2fnLzTQ==}
     dev: true
 
   /levn@0.4.1:
@@ -3963,27 +3967,27 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /stylelint-config-recommended@14.0.0(stylelint@16.2.1):
+  /stylelint-config-recommended@14.0.0(stylelint@16.3.1):
     resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.0
     dependencies:
-      stylelint: 16.2.1
+      stylelint: 16.3.1
     dev: true
 
-  /stylelint-config-standard@36.0.0(stylelint@16.2.1):
+  /stylelint-config-standard@36.0.0(stylelint@16.3.1):
     resolution: {integrity: sha512-3Kjyq4d62bYFp/Aq8PMKDwlgUyPU4nacXsjDLWJdNPRUgpuxALu1KnlAHIj36cdtxViVhXexZij65yM0uNIHug==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.1.0
     dependencies:
-      stylelint: 16.2.1
-      stylelint-config-recommended: 14.0.0(stylelint@16.2.1)
+      stylelint: 16.3.1
+      stylelint-config-recommended: 14.0.0(stylelint@16.3.1)
     dev: true
 
-  /stylelint@16.2.1:
-    resolution: {integrity: sha512-SfIMGFK+4n7XVAyv50CpVfcGYWG4v41y6xG7PqOgQSY8M/PgdK0SQbjWFblxjJZlN9jNq879mB4BCZHJRIJ1hA==}
+  /stylelint@16.3.1:
+    resolution: {integrity: sha512-/JOwQnBvxEKOT2RtNgGpBVXnCSMBgKOL2k7w0K52htwCyJls4+cHvc4YZgXlVoAZS9QJd2DgYAiRnja96pTgxw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -3991,6 +3995,7 @@ packages:
       '@csstools/css-tokenizer': 2.2.4
       '@csstools/media-query-list-parser': 2.1.9(@csstools/css-parser-algorithms@2.6.1)(@csstools/css-tokenizer@2.2.4)
       '@csstools/selector-specificity': 3.0.3(postcss-selector-parser@6.0.16)
+      '@dual-bundle/import-meta-resolve': 4.1.0
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 9.0.0
@@ -4007,7 +4012,7 @@ packages:
       ignore: 5.3.1
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
-      known-css-properties: 0.29.0
+      known-css-properties: 0.30.0
       mathml-tag-names: 2.1.3
       meow: 13.2.0
       micromatch: 4.0.5

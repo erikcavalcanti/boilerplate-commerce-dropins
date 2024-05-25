@@ -22,6 +22,8 @@ const LCP_BLOCKS = [
   'commerce-checkout',
   'commerce-account',
   'commerce-login',
+  'banner-video',
+  'banner-img'
 ]; // add your LCP blocks to the list
 
 /**

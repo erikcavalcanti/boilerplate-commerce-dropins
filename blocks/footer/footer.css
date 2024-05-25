@@ -1,15 +1,28 @@
 footer {
-  padding: 2rem;
-  background-color: var(--color-neutral-100);
+  padding: 24rem;
+  padding-bottom: 0rem;
+  background-color: white;
   font: var(--type-body-2-default-font);
   letter-spacing: var(--type-body-2-default-letter-spacing);
 }
 
 footer .footer {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+/* .section.img-full.column-container {
+  padding: 0 !important;
+}
+
+.section.img-full.column-container > .column-wrapper {
+  max-width: none;
+} */
+
+.section.img-full.column-container picture img {
+  width: 100%;
 }

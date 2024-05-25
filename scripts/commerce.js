@@ -257,12 +257,9 @@ export async function getProduct(sku) {
     dl.addEventListener('adobeDataLayer:change', (event) => {
       const key = `${storeViewCode}:productViewHistory`;
       let viewHistory = JSON.parse(window.localStorage.getItem(key) || '[]');
-      if (event.productContext) {
-        const productSku = event.productContext.sku;
-        viewHistory = viewHistory.filter((item) => item.sku !== productSku);
-        viewHistory.push({ date: new Date().toISOString(), sku: productSku });
-        window.localStorage.setItem(key, JSON.stringify(viewHistory.slice(-10)));
-      }
+      viewHistory = viewHistory.filter((item) => item.sku !== event.productContext.sku);
+      viewHistory.push({ date: new Date().toISOString(), sku: event.productContext.sku });
+      window.localStorage.setItem(key, JSON.stringify(viewHistory.slice(-10)));
     }, { path: 'productContext' });
     dl.addEventListener('place-order', () => {
       const shoppingCartContext = dl.getState('shoppingCartContext');

@@ -1,1 +1,16 @@
 /* stylelint-disable no-empty-source */
+header picture img {
+    width: 164px !important;
+}
+
+:root {
+    --nav-height: 6rem !important
+}
+
+#cmp-nav-wrapper {
+    background-color: white !important;
+}
+
+.section.commerce-cart-container {
+    padding-top: 15rem;
+}

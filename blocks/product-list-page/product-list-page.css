@@ -8,8 +8,12 @@
     object-fit: contain;
 }
 
-@media (width >= 750px) {
+@media (width >=750px) {
     .product-list-page {
         min-height: auto;
     }
+}
+
+.section.product-list-page-container {
+    padding-top: 15rem;
 }

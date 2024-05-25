@@ -1,0 +1,84 @@
+.section.banner-video-container {
+    padding: 0;
+    position: relative;
+    top: 0px;
+    height: auto;
+}
+
+.section.banner-video-container .banner-video-wrapper {
+    max-width: 100%;
+}
+
+.section.banner-video-container .banner-video-wrapper video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-video-text.title {
+    font-family: Montserrat;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    backdrop-filter: none;
+    filter: none;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    left: 154px;
+    top: 542px;
+    visibility: visible;
+    perspective: 601px;
+}
+
+.banner-video-text.description {
+    font-family: Montserrat;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: left;
+    line-height: 46px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 40px;
+    backdrop-filter: none;
+    filter: none;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    left: 154px;
+    top: 592px;
+    visibility: visible;
+    perspective: 601px;
+}
+
+@media (width >=768px) {
+    .section.banner-video-container,
+    .section.banner-video-container .banner-video-wrapper video {
+        height: 800px;
+    }
+}

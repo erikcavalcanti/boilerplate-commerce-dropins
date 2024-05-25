@@ -5,3 +5,19 @@ header .nav-sections,
 header .nav-tools {
   display: none !important;
 }
+
+header picture img {
+  width: 164px !important;
+}
+
+:root {
+  --nav-height: 6rem !important
+}
+
+#cmp-nav-wrapper {
+  background-color: white !important;
+}
+
+.section.commerce-checkout-container {
+  padding-top: 15rem;
+}
