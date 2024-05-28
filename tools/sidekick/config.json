@@ -31,6 +31,13 @@
           "url": "https://experience.adobe.com/aem/generate-variations",
           "passConfig": true,
           "environments": [ "preview", "live", "edit" ]
+        },
+        {
+          "id": "webjump-ai-cosmo",
+          "title": "Webjump AI Cosmo",
+          "url": "https://webjump.ai/cosmo/",
+          "environments": [ "preview", "edit" ],
+          "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
         }
     ]
 }
